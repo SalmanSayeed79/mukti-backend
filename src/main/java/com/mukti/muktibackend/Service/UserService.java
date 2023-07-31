@@ -24,7 +24,7 @@ public class UserService {
         return userRepo.searchUserByemail(email);
     }
 
-    @RequestMapping(value="/user/id/{id}",method = RequestMethod.GET)
+    @RequestMapping(value="/userid/{id}",method = RequestMethod.GET)
     public User searchBotById(@PathVariable("id") Long id){
         return userRepo.searchUserById(id);
     }
