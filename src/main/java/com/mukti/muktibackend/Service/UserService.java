@@ -23,7 +23,7 @@ public class UserService {
     public User searchBotByEmail(@PathVariable("email") String email){
         return userRepo.searchUserByemail(email);
     }
-
+    @CrossOrigin(origins = "*", allowedHeaders = "*" )
     @RequestMapping(value="/userid/{id}",method = RequestMethod.GET)
     public User searchBotById(@PathVariable("id") Long id){
         return userRepo.searchUserById(id);
